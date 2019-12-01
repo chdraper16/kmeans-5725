@@ -1,0 +1,67 @@
+===================
+Hamerly's Algorithm
+===================
+
+This software includes an implementation
+of Hamerly's algorithm and Lloyd's algorithm.
+With in this github I have also include two data sets
+used in my testing. A program to generate more random
+data sets. And a program to visual the output of both
+Hamerly's and Lloyd's algorithm.
+
+-------------------
+This code was created by Christopher Draper.
+Hamerly's algorithm is based of the work of
+Greg Hamerly and his paper Making k-means
+even faster which can be found here:
+http://cs.ecs.baylor.edu/~hamerly/papers/sdm_2010.pdf
+-------------------
+To build the software type "make"
+This will build Hamerly's algorithm.
+To build the program for Lloyd's algorithm type
+"make lloyd"
+-------------------
+
+To run the programs run ether of the following two commands:
+./NumTest data_set k [optional flag: t]
+This will run Hamerly's algorithm for the input data found in
+data_set and for k clusters.
+
+ex: ./NumTest birch_ds1.txt 10 t 
+This will run Hamerly's algorithm on the birch data set and generate 10 clusters 
+and say how long it took and how much memory was used.
+
+./lloyd k [optional flag: t] < data_set 
+This will run Lloyd's algorithm for the input data found in data_set
+and for k clusters.
+
+ex: ./lloyd 4 < test_data_uniform_1250000_2.txt 
+This will run Lloyd's algorithm for the random uniform data set 
+and generate 4 clusters and output the points and those clusters
+
+Both programs have the option to have an extra arguement t. If this arguement
+is set to t then the program will run in testing mode and print the speed and memory
+usage of each program. If it is run not in testing mode then it will print out the
+results from each algoirthm's clustering.
+
+To run dataGen.py simply call:
+python3 dataGen.py
+And it will output 1000 random data points 
+
+To run visual.py simply run:
+python3 visual.py < output 
+With output being the output from ether NumTest or lloyd 
+This program will make use of matplotlib.pyplot to plot up to
+1000 data points and up to 10 clusters.
+
+visual.py will not work on linprog as linprog has no python libraries
+
+-------------------
+the make file also includes the commands:
+make clean
+Will removes all executables 
+
+make test
+
+Which runs the commands I used to produce the test output for the paper
+and stores it into a file called outut.txt

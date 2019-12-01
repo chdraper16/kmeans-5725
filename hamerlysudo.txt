@@ -1,0 +1,57 @@
+for j = 0 to k:
+	q[j] = 0
+	c'[j] = 0
+for i = 0 to n:
+	a[i] = PAC(i)
+	q[a[i]]+=1
+	c'[a[i]]+=x[i]
+converged = false
+while not converged:
+	for j = 0 to k:
+		s[j] = min when j'!=j of distance(c[j'],c[j])
+	for i = 0 to n:
+		m = max(s[a[i]]/2,l[i])
+		if u[i] > m:
+			u[i] = distance(x[i],c[a[i]])
+			if u[i] > m:
+				a' = a[i]
+				a[i] = PAC(i)
+				if a[i] != a':
+					q[aa]-=1
+					q[a[i]]+=1
+	Move-Centers()
+	Update-Bounds()
+
+for i = 0 to k:
+	c'[i] = 0
+for i = 0 to n:
+	c'[a[i]]+=x[i]
+for i = 0 to k:
+	cs = c'[i]
+	if(q[i] > 0):
+		c[i] = c'[i]/q[i]
+	p[i] = distance(cs,c[i])
+pc = 0
+for i = 0 to k:
+	pc+=p[i]
+if pc == 0:
+	converged = true
+
+for i = 0 to n:
+	u[i]+=p[a[i]]
+	l[i]-=p[a[i]]
+	
+	
+u[i] = MAX
+l[i] = MAX
+for j = 0 to k:
+	t = dist(x[i],c[j])
+	if t < u[i]:
+		l[i] = u[i]
+		u[i] = t
+		a[i] = j
+	else if t < l[i]:
+		l[i] = t 
+return a[i]
+
+

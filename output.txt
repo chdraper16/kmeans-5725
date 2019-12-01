@@ -1,0 +1,130 @@
+NumTest k = 3 birch
+Time Taken: 0.196824
+Memory Usage: 1191 kb
+Time Taken: 0.159828
+Memory Usage: 1191 kb
+Time Taken: 0.164569
+Memory Usage: 1191 kb
+
+NumTest k = 20 birch
+Time Taken: 0.439282
+Memory Usage: 1191 kb
+Time Taken: 0.437558
+Memory Usage: 1191 kb
+Time Taken: 0.436651
+Memory Usage: 1191 kb
+
+NumTest k = 100 birch
+Time Taken: 0.865802
+Memory Usage: 1191 kb
+Time Taken: 0.863963
+Memory Usage: 1190 kb
+Time Taken: 0.854909
+Memory Usage: 1191 kb
+
+NumTest k = 500 birch
+Time Taken: 2.00677
+Memory Usage: 1191 kb
+Time Taken: 2.06388
+Memory Usage: 1190 kb
+Time Taken: 2.06395
+Memory Usage: 1209 kb
+
+
+lloyd k = 3 birch
+Time Taken: 0.330031
+Memory Usage: 993 kb
+Time Taken: 0.279003
+Memory Usage: 993 kb
+Time Taken: 0.277008
+Memory Usage: 993 kb
+
+lloyd k = 20 birch
+Time Taken: 0.489023
+Memory Usage: 992 kb
+Time Taken: 0.488028
+Memory Usage: 992 kb
+Time Taken: 0.485765
+Memory Usage: 993 kb
+
+lloyd k = 100 birch
+Time Taken: 2.69263
+Memory Usage: 1012 kb
+Time Taken: 2.72322
+Memory Usage: 1013 kb
+Time Taken: 2.74011
+Memory Usage: 1013 kb
+
+lloyd k = 500 birch
+Time Taken: 9.98894
+Memory Usage: 1005 kb
+Time Taken: 10.0038
+Memory Usage: 1004 kb
+Time Taken: 9.95002
+Memory Usage: 1004 kb
+
+
+NumTest k = 3 random_uniform
+Time Taken: 2.29176
+Memory Usage: 11301 kb
+Time Taken: 2.29103
+Memory Usage: 11320 kb
+Time Taken: 2.31
+Memory Usage: 11300 kb
+
+NumTest k = 20 random_uniform
+Time Taken: 10.9964
+Memory Usage: 11329 kb
+Time Taken: 11.035
+Memory Usage: 11331 kb
+Time Taken: 10.9587
+Memory Usage: 11300 kb
+
+NumTest k = 100 random_uniform
+Time Taken: 17.0885
+Memory Usage: 11302 kb
+Time Taken: 17.1571
+Memory Usage: 11301 kb
+Time Taken: 17.0371
+Memory Usage: 11302 kb
+
+NumTest k = 500 random_uniform
+Time Taken: 44.2884
+Memory Usage: 11306 kb
+Time Taken: 44.2574
+Memory Usage: 11307 kb
+Time Taken: 44.4281
+Memory Usage: 11314 kb
+
+
+lloyd k = 3 random_uniform
+Time Taken: 2.35704
+Memory Usage: 8854 kb
+Time Taken: 2.35372
+Memory Usage: 8853 kb
+Time Taken: 2.35418
+Memory Usage: 8880 kb
+
+lloyd k = 20 random_uniform
+Time Taken: 13.8974
+Memory Usage: 8859 kb
+Time Taken: 13.9697
+Memory Usage: 8853 kb
+Time Taken: 13.8952
+Memory Usage: 8853 kb
+
+lloyd k = 100 random_uniform
+Time Taken: 27.5429
+Memory Usage: 8854 kb
+Time Taken: 27.5714
+Memory Usage: 8855 kb
+Time Taken: 27.5625
+Memory Usage: 8884 kb
+
+lloyd k = 500 random_uniform
+Time Taken: 357.22
+Memory Usage: 8872 kb
+Time Taken: 351.603
+Memory Usage: 8892 kb
+Time Taken: 366.537
+Memory Usage: 8868 kb
