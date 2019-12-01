@@ -56,9 +56,9 @@ if(!ds)
 /* Number of input comes from file, k from user input */
 ds >> n>> k;
 k = atoi(argv[2]);
-if(k<n)
+if(n<k)
 {
-	cout << "k must be greater than n" << endl;
+	cout << "n must be greater than k" << endl;
 	return -1;
 }
 /* Allocating memory for different lists */

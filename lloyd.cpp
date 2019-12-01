@@ -45,9 +45,9 @@ if(argc == 3 && argv[2][0] == 't')
 //read in
 cin >> POINTS >> CLUST;
 CLUST = atoi(argv[1]);
-if(CLUST<POINTS)
+if(POINTS<CLUST)
 {
-	cout << "k must be greater than n" << endl;
+	cout << "n must be greater than k" << endl;
 	return -1;
 }
 
